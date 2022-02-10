@@ -20,11 +20,13 @@ class Title(Widget):
         self.style = "on color(8)"
         return Align.center(text_output, vertical="middle")
 
+
 # panel that showing which comment should be used
 class SimpleCommand(Widget):
     def render(self):
-        self.style="on color(0)"
+        self.style = "on color(0)"
         return Align.left("Press 'y' to increment, 'u' to decrement, and 'q' to quit", vertical="bottom")
+
 
 # show all panel into terminal
 class Menu(App):
